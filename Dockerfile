@@ -1,6 +1,6 @@
 FROM node:14-buster-slim as dep-builder
 
-LABEL MAINTAINER https://github.com/DIYgod/RSSHub/
+LABEL MAINTAINER https://github.com/alex100110/RSSHub
 
 ARG USE_CHINA_NPM_REGISTRY=0;
 ARG PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1;
