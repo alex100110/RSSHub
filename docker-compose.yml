@@ -17,7 +17,7 @@ services:
 
     browserless:
         # See issue 6680
-        image: browserless/chrome:1.43-chrome-stable
+        image: browserless/chrome:latest
         restart: always
         ulimits:
           core:
