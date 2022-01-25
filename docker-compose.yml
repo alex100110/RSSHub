@@ -17,8 +17,14 @@ services:
 
     browserless:
         # See issue 6680
+        # ports:
+            # - '3000:3000' 
         image: browserless/chrome:latest
         restart: always
+        environment: 
+            - DEFAULT_LAUNCH_ARGS=["--window-size=1920,1080", "--ignore-certifcate-errors-spki-list", "--ignore-certifcate-errors", "--disable-setuid-sandbox"]
+            # - PROXY_URL=socks5://127.0.0.1:8888
+            # -  "--proxy-server=http://127.0.0.1:8888"
         ulimits:
           core:
             hard: 0
